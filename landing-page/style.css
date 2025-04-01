@@ -1,0 +1,154 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos generales */
+body {body {
+    font-family: 'Poppins', sans-serif;
+}
+
+    body {
+        background: white;
+        color: black;
+        text-align: center;
+    }
+}
+
+/* ---- NAVBAR ---- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffebcd;
+}
+
+/* ---- HERO SECTION ---- */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero img {
+    width: 300px;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* ---- BOTÓN ---- */
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #ff7e5f;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff7e5f;
+    color: white;
+}
+
+/* ---- ANIMACIONES ---- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.servicios {
+    text-align: center;
+    padding: 40px;
+}
+
+.pdf-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.pdf-list li {
+    margin: 10px 0;
+}
+
+.pdf-list a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ff7e5f;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.pdf-list a:hover {
+    color: #d64c3d;
+    text-decoration: underline;
+}
+button {
+    transition: background-color 0.5s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff5733;
+}
+:root {
+    --primary-color: #ff5733;
+    --secondary-color: #222;
+    --text-color: #333;
+    --bg-color: #f8f9fa;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
